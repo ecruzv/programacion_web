@@ -1,0 +1,70 @@
+html{
+    font-size: 62.5%; /*Reset para rems*/
+}
+
+/*Fuentes */
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    
+}
+
+h1{
+    color:white;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.fondo{
+background-image: url(../cosmos.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+
+.portada{
+
+    background-color: rgba(245, 237, 237, 0.918);
+    border-radius: 2%;
+    padding: 2%;
+        flex-basis: calc(46% - 1rem);
+        text-align: center;
+    }
+    
+.principal{
+margin: 0% 7% 2% 7%;
+background-color: rgba(245, 237, 237, 0.918);
+border-radius: 2%;
+padding: 5%;
+}
+
+.header{
+    align-content: center;
+}
+
+.flex{
+    margin: 0% 7% 2% 7%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer{
+    color: rgb(255, 255, 255);    
+    margin: 0% 7% 2% 7%;
+    background-color: rgb(68, 3, 63);
+    padding-left: 5%;
+    padding-top: 1% ;
+    padding-bottom:1% ;
+
+    }
+
+    .navegacion a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1.8rem;
+        margin-right: 2rem;
+    }
+    
+    .navegacion a:hover {
+        font-weight: 900;
+    }
