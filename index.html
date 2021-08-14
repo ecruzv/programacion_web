@@ -1,55 +1,270 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Formulario Sindy Isaza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nuestra Boda</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body background="Imagenes/fondo.jpg">
+<body>
+
+    <header class="header">
+        <img src="img/logo.png" alt="logo" height="100px">
+    </header>
+
+    <div class=" nav-bg">
+        <nav class="navegacion contenedor">
+            <a href="#">Home</a>
+            <a href="#invitacion">Invitación</a>
+            <a href="#direccion">Dirección</a>
+            <a href="#confirma">Confirmación</a>
+            <a href="https://mesaderegalos.liverpool.com.mx/eventodebusqueda">Mesa de Regalos</a>
+        </nav>
+    </div>
+    
+
+    <div class="hero">
+        <div class="contenido-hero">
+            <div id="countdown" class="countdown">
+
+                <script>
+var end = new Date('12/12/2021 9:30 AM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + ' dias, ';
+        document.getElementById('countdown').innerHTML += hours + ' horas, ';
+        document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
+        document.getElementById('countdown').innerHTML += seconds + ' segundos';
+    }
+    timer = setInterval(showRemaining, 1000);
+                </script>
+        </div>
+
+            <h2>Save the date</h2>
+            <h3 id="invitacion">12-12-2021</h3>
+            <a class="boton" href="#contacto">Confirmar</a>
+
+            
+        </div>
+        
+    </div>
+    
+
+    <div class="contenedor sombra">
 
 
-<form <strong action="apgform1.7.php">
-
-<P ALIGN=center> 
 
 
-<label> <font color="aqua" font size=7> FORMULARIO DE REGISTRO </font> </label>
-<br />
-<br />
-<br />
-<br />
 
-<label for="input_nombres"><font color="aqua" font size=5>Nombres</font></label>
-<input id="input_nombres" type="text" name="Nombres" value="" />
-<br />
-<br />
-<label for="primer_apll"><font color="aqua" font size=5>Primer apellido</font></label>
-<input id="primer_apll" type="text" name="Primer apellido" value="" />
-<br /><br />
-<label for="segundo_apll"><font color="aqua" font size=5>Segundo apellido</font></label>
-<input id="segundo_apll" type="text" name="Segundo apellido" value="" />
-<br /><br />
-
-<label for="input_Genero"><font color="aqua" font size=5>Género</font></label>
-<select id="select_genero" name="Genero">
-<option value="M">Masculino</option>
-<option value="F">Femenino</option>
-</select>
-<br /><br />
+        <h2 >Invitación</h2>
+        <div class="centrar">
+        <img src="img/separador.png" alt="separador" width="500px">
+         </div>
+        <main class="servicios">
 
 
-<label for="direccion"><font color="aqua" font size=5>Dirección</font></label>
-<input id="direccion" type="text" name="Direccion" value="" />
-<br /><br />
-<label for="correo"><font color="aqua" font size=5>Correo electrónico</font></label>
-<input id="correo" type="text" name="Correo Electronico" value="" />
-<br /><br />
-<label for="telefono"><font color="aqua" font size=5>Teléfono</font></label>
-<input id="telefono" type="text" name="Telefono" value="" />
-<br /><br />
-<input type="reset" name="reset" value="Limpiar" />
-<input type="submit" name="submit" value="Enviar" />
-<br /><br />
-<a href="form.xls">Informe en Excel</a> 
-</form>
+                <div class="servicio">
+                    <h3>Juana López</h3>
+                    <div>
+
+                        <img src="img/retrato1.png" alt="novia" width="200px">
+                    </div>
+                </div>
+
+                <div class="servicio">
+                    <img src="img/symbol.png" alt="symbol" width="50px">
+                </div>
+
+                <div class="servicio">
+                    <h3>Jean Saenz </h3>
+                    <div>
+
+                        <img src="img/retrato2.png" alt="novio" width="200px">
+                    </div>
+                </div>
+                
+        </main>
+        <div class="invita">
+        <h3>"Tienen el honor de invitarlo a usted y a su familia a su enlace matrimonial, que se llevara a cabo el 12 de Diciembre de 2021 9:00hrs en Salon de Fiestas El Paraiso Ciudad de México." </h3>
+    </div>
+<div class="espacio" id="direccion">
+    <hr style="border-color:rgb(255, 201, 252);">
+</div>
+
+
+        <h2>Jardin de Eventos "Paraiso"</h2>
+        <div class="centrar">
+            <img src="img/separador.png" alt="separador" width="500px">
+             </div>
+        <ul class="galeria">
+            <li><a href="#img1"><img src="img/salon/01.jpg"></a></li>
+            <li><a href="#img2"><img src="img/salon/02.jpg"></a></li>
+            <li><a href="#img3"><img src="img/salon/03.jpg"></a></li>
+            <li><a href="#img4"><img src="img/salon/04.jpg"></a></li>
+        </ul>
+    
+        <h1>Ejd, San Lorenzo Tezonco 164, San Francisco Culhuacan, 04430 Ciudad de México, CDMX</h1>
+
+        <div class="modal" id="img1">
+            <h3>Recepción</h3>
+            <div class="imagen">
+                <a href="#img4">&#60;</a>
+                <a href="#img2"><img src="img/salon/02.jpg"></a>
+                <a href="#img2">></a>
+            </div>
+            <a class="cerrar" href="#direccion">X</a>
+        </div>
+        
+        <div class="modal" id="img2">
+            <h3>Amenidades</h3>
+            <div class="imagen">
+                <a href="#img1">&#60;</a>
+                <a href="#img3"><img src="img/salon/03.jpg"></a>
+                <a href="#img3">></a>
+            </div>
+            <a class="cerrar" href="#direccion">X</a>
+        </div>
+        
+        <div class="modal" id="img3">
+            <h3>Ceremonia</h3>
+            <div class="imagen">
+                <a href="#img2">&#60;</a>
+                <a href="#img4"><img src="img/salon/04.jpg"></a>
+                <a href="#img4">></a>
+            </div>
+            <a class="cerrar" href="#direccion">X</a>
+        </div>
+        
+        <div class="modal" id="img4">
+            <h3>Ceremonia</h3>
+            <div class="imagen">
+                <a href="#img3">&#60;</a>
+                <a href="#img1"><img src="img/salon/01.jpg"></a>
+                <a href="#img1">></a>
+            </div>
+            <a class="cerrar" href="#direccion">X</a>
+        </div>
+
+        <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9418.755627486627!2d-99.12180366573001!3d19.33080184071251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01e7430fdd7d%3A0x455e59672c509347!2zSmFyZMOtbiBQYXJhw61zbw!5e0!3m2!1sen!2smx!4v1628964243852!5m2!1sen!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+<div class="espacio" id="confirma">
+    <hr style="border-color:rgb(255, 201, 252);">
+</div>
+
+        <div id="contacto" class="contacto">
+            <h2>Confirma tu asistencia</h2>
+            <div class="centrar">
+                <img src="img/separador.png" alt="separador" width="500px">
+                 </div>
+            <form class="formulario" action="#" method="POST">
+                <legend>Favor de llenar todos tus datos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input type="tel" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="campo w-100">
+                        <label>Correo</label>
+                        <input type="mail" name="correo" placeholder="Mail">
+                    </div>
+
+                    <div class="campo">
+                        <label>Invitado de:</label>
+                        <input type="radio" id="novio" name="novio" value="Novio">
+                        <label for="novio">Novio</label><br>
+                        <input type="radio" id="novia" name="novia" value="Novia">
+                        <label for="novia">Novia</label><br>
+                    </div>
+
+                    <div class= "campo">                
+                        <label>Número de asistentes Adultos</label>                 
+                        <select name="dieta" id="dieta">
+                            <option value="">--Selecciona una opcion--</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                        </select>
+
+                        <label>Tipo de dieta</label>                 
+                        <select name="dieta" id="dieta">
+                            <option value="">--Selecciona una opcion--</option>
+                            <option value="Vegano">Vegano</option>
+                            <option value="Vegetariano">Vegetariano</option>
+                            <option value="Mixta">Mixta</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo w-100">
+                        <label placeholder="Especificaciones adicionales">Alergias de Alimentos:</label>
+
+                        <textarea></textarea>
+                    </div>
+                </div><!--.contenedor-campos-->
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+        <div class="espacio" id="confirma">
+            <hr style="border-color:rgb(255, 201, 252);">
+        </div>
+        <div id="contacto" class="contacto">
+            <h2>¡Te Esperamos!</h2>
+            <div class="centrar">
+                <img src="img/separador.png" alt="separador" width="500px">
+            </div>
+
+            <div class="centrar">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/P9iKATG9BW4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <audio controls>
+            <source src="song.mp3" type="audio/mp3" autoplay loop>>
+        </audio>
+        <p>Trabajo Final Edgar Cruz Vilchis / Desarrollo Web</p>
+    </footer>
+
+
+    
 </body>
 </html>
